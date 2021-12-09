@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ebebeb;
+}
+legend{
+    display: none;
+}
+fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    margin: 4rem 20rem;
+    align-items: center;
+}
+input{
+    flex: 1 0 auto;
+    outline: none;
+    padding: .70rem;
+    border-radius: 0.50rem;
+    border: none;
+}
+form{
+    background-color: #ebebeb;
+}
+.boton{
+    width: 100%;
+    padding: 0.70rem;
+    border-radius: 0.50rem;
+    border: none;
+background-color: white;
+transition: all .5s;
+}
+.boton:hover{
+    background-color: #0022AA;
+    color: white;
+}

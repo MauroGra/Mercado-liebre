@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" href ="/css/register.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <fieldset>
+            <legend class="hidden">Nombre y apellido</legend>
+            <label for="nombre y apellido"></label>
+            <input type="text" id="nombre y apellido" name="nombreApellido" required placeholder="Nombre y apellido" minlength="6">
+        </fieldset>
+
+        <fieldset>
+            <legend class="hidden">Nombre de usuario</legend>
+            <label for="nombreUsuario"></label>
+            <input type="text" id="NombreUsuario" name="nombreUsuario" required placeholder="Nombre de usuario">
+        </fieldset>
+
+        <fieldset>
+            <legend class="hidden">Email</legend>
+            <label for="email"></label>
+            <input type="email" id="Email" name="email" required placeholder="Email">
+        </fieldset>
+        
+        <fieldset>
+            <legend class="hidden">Fecha de nacimiento</legend>
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="Fecha" name="fecha" required>
+        </fieldset>
+
+        <fieldset>
+            <legend class="hidden">Domicilio</legend>
+            <label for="domicilio"></label>
+            <input type="text" id="Domicilio" name="domicilio" required placeholder="Domicilio">
+        </fieldset>
+
+        <fieldset>
+            <legend>Perfil de ususario</legend>
+            <div class="espaciado0">
+            <label for="comprador">Comprador</label>
+            <input type="radio" id="comprador" name="perfil" required value="comprador">
+            <label for="vendedor">Vendedor</label>
+            <input type="radio" id="vendedor" name="perfil" required value="vendedor">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Categorías de interés</legend>
+            <div class="espaciado">
+            <label for="electro">Electro</label><input type="checkbox" id="electro" name="categoria" required value="electro">
+            <label for="moda">Moda</label><input type="checkbox" id="moda" name="categoria" required value="moda">
+            <label for="hogar">Hogar</label><input type="checkbox" id="hogar" name="categoria" required value="hogar">
+            <label for="jugueteria">Juguetería</label><input type="checkbox" id="jugueteria" name="categoria" required value="jugueteria">
+            <label for="vidaSana">Vida sana</label><input type="checkbox" id="vidaSana" name="categoria" required value="vidaSana">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend class="hidden">Foto del usuario</legend>
+            <label for="fotoUsuario">Foto del Usuario:</label>
+            <input type="file" id="fotoUsuario" name="foto" required accept="image/*">
+        </fieldset>
+
+        <fieldset>
+            <legend class="hidden">Contraseña</legend>
+            <label for="clave"></label>
+            <input type="password" id="clave" name="clave" required placeholder="Contraseña" minlength="8">
+        </fieldset>
+
+    
+        <fieldset>
+            <legend class="hidden">Confirmar Contraseña</legend>
+            <label for="Confirmar"></label>
+            <input type="password" id="Confirmar" name="ConfirmarContraseña" required placeholder="Confirmar Contraseña">
+        </fieldset>
+
+        <fieldset>
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>
